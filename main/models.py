@@ -8,3 +8,7 @@ class Post(models.Model):
     title = models.CharField(max_length=80)
     content = models.CharField(max_length=255)
     publication_date = models.DateField(auto_now_add=True)
+    post_image = models.ImageField(null=True, blank=True, upload_to='images/')
+
+    def __str__(self):
+        return self.title
