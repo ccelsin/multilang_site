@@ -1,3 +1,4 @@
+# main/apps.py
 from django.apps import AppConfig
 
 class MainConfig(AppConfig):
@@ -5,4 +6,4 @@ class MainConfig(AppConfig):
     name = 'main'
 
     def ready(self):
-        import main.translation 
+        import main.translation  # Importer le module de traduction

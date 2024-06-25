@@ -38,6 +38,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -45,8 +46,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
-    'modeltranslation'
+    
 ]
+
+
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'fr'
+MODELTRANSLATION_LANGUAGES = ('fr', 'en')
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
