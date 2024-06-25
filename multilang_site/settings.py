@@ -26,6 +26,12 @@ SECRET_KEY = 'django-insecure-q(^==u3v_+0&2@8c%+3y4a2a2nx33tou6)j!21(+8tj$19wyu)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
+
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR,'locale')
+]
+
 ALLOWED_HOSTS = []
 
 
@@ -38,11 +44,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'main'
+    'main',
+    'modeltranslation'
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    "django.middleware.locale.LocaleMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -110,6 +118,16 @@ LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
+
+from django.utils.translation import gettext_lazy as _
+
+gettext = lambda s: s
+
+LANGUAGES = (
+    ('fr', gettext('Français')),
+    ('en', gettext('English')),
+)
+
 
 USE_TZ = True
 
