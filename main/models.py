@@ -2,7 +2,7 @@ from django.db import models
 from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
 
-#Création du modèle pour gérer des articles de blog avec les champs title, content, et publication_date.
+#Création du modèle pour gérer des articles de blog avec les champs title, content, et publication_date et post_image.
 
 class Post(models.Model):
     title = models.CharField(max_length=80)

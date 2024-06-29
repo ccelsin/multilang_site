@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-28 23:46+0200\n"
+"POT-Creation-Date: 2024-06-29 18:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: .\main\templates\main\index.html:25
+#: .\main\templates\main\index.html:25 .\search\templates\search\search.html:25
 msgid "Langues"
 msgstr ""
 
@@ -26,15 +26,15 @@ msgstr ""
 msgid "Actualités"
 msgstr ""
 
-#: .\main\templates\main\index.html:60
+#: .\main\templates\main\index.html:60 .\search\templates\search\result.html:23
 msgid "Posté le"
 msgstr ""
 
-#: .\multilang_site\settings.py:133
+#: .\multilang_site\settings.py:135
 msgid "Français"
 msgstr ""
 
-#: .\multilang_site\settings.py:134
+#: .\multilang_site\settings.py:136
 msgid "English"
 msgstr ""
 
@@ -52,4 +52,28 @@ msgstr ""
 
 #: .\mychatbot\templates\mychatbot\base.html:31
 msgid "Envoyer"
+msgstr ""
+
+#: .\search\templates\search\result.html:4
+msgid "Résultats de la recherche"
+msgstr ""
+
+#: .\search\templates\search\result.html:7
+msgid "Résultats"
+msgstr ""
+
+#: .\search\templates\search\result.html:35
+msgid "Aucun résultat trouvé."
+msgstr ""
+
+#: .\search\templates\search\search.html:43
+msgid "Recherche"
+msgstr ""
+
+#: .\search\templates\search\search.html:51
+msgid "Votre texte ici"
+msgstr ""
+
+#: .\search\templates\search\search.html:52
+msgid "Rechercher"
 msgstr ""

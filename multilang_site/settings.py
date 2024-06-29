@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mychatbot',
+    'search',
     'main',
     'jsonify'
 ]
@@ -70,6 +71,7 @@ TEMPLATES = [
         'DIRS': [
             os.path.join(BASE_DIR, 'main', 'templates'),
             os.path.join(BASE_DIR, 'mychatbot', 'templates'),
+            os.path.join(BASE_DIR, 'search', 'templates'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
