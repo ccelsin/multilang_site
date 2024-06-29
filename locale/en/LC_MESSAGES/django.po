@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 21:53+0200\n"
+"POT-Creation-Date: 2024-06-28 23:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,16 +30,26 @@ msgstr "News"
 msgid "Posté le"
 msgstr "Posted on"
 
-#: .\multilang_site\settings.py:124
+#: .\multilang_site\settings.py:133
 msgid "Français"
-msgstr ""
+msgstr "French"
 
-#: .\multilang_site\settings.py:125
-msgid "Anglais"
-msgstr ""
+#: .\multilang_site\settings.py:134
+msgid "English"
+msgstr "English"
 
-#~ msgid "French"
-#~ msgstr "Français"
+#: .\mychatbot\templates\mychatbot\base.html:22
+msgid "Assistant virtuel"
+msgstr "Virtual Assistant"
 
-#~ msgid "English"
-#~ msgstr "Anglais"
+#: .\mychatbot\templates\mychatbot\base.html:23
+msgid "Bonjour, mon nom est Celsin. Comment puis-je vous aider ?"
+msgstr "Hello, my name is Celsin. How can I help you?"
+
+#: .\mychatbot\templates\mychatbot\base.html:30
+msgid "Ecrivez votre message"
+msgstr "Write your message"
+
+#: .\mychatbot\templates\mychatbot\base.html:31
+msgid "Envoyer"
+msgstr "Send"

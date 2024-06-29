@@ -1,0 +1,159 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Bonjour",
+        "Good day"
+      ],
+      "responses": [
+        "Bonjour,que puis-je faire pour vous aider"
+        
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "Which items do you have?",
+        "What kinds of items are there?",
+        "What do you sell?",
+        "What products are available?",
+        "Show me your products"
+      ],
+      "responses": [
+        "We sell coffee and tea",
+        "We have coffee and tea",
+        "Our main products are coffee and tea",
+        "You can choose from a variety of coffee and tea"
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?",
+        "What payment methods do you accept?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Paypal",
+        "We accept most major credit cards, and Paypal",
+        "You can pay using VISA, Mastercard, or Paypal",
+        "We accept a variety of payment methods including VISA, Mastercard, and Paypal"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "When do I get my delivery?",
+        "What's the delivery time?",
+        "When will my order arrive?"
+      ],
+      "responses": [
+        "Delivery takes 2-4 days",
+        "Shipping takes 2-4 days",
+        "Your order will arrive in 2-4 days",
+        "You can expect delivery in 2-4 days"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?",
+        "Make me laugh",
+        "Do you have any jokes?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison.",
+        "Why don't scientists trust atoms? Because they make up everything!",
+        "How does a penguin build its house? Igloos it together."
+      ]
+    },
+    {
+      "tag": "location",
+      "patterns": [
+        "Where are you located?",
+        "What is your address?",
+        "Where can I find you?",
+        "Where is your store?"
+      ],
+      "responses": [
+        "We are located at 123 Coffee St, Caffeine City",
+        "Our store is at 123 Coffee St, Caffeine City",
+        "You can find us at 123 Coffee St, Caffeine City",
+        "We are at 123 Coffee St, Caffeine City"
+      ]
+    },
+    {
+      "tag": "hours",
+      "patterns": [
+        "What are your opening hours?",
+        "When are you open?",
+        "What are your working hours?",
+        "When do you open and close?"
+      ],
+      "responses": [
+        "We are open from 8 AM to 8 PM, Monday to Friday",
+        "Our working hours are from 8 AM to 8 PM, Monday to Friday",
+        "We operate between 8 AM and 8 PM on weekdays",
+        "Our store is open from 8 AM to 8 PM, Monday through Friday"
+      ]
+    },
+    {
+      "tag": "returns",
+      "patterns": [
+        "Can I return an item?",
+        "What is your return policy?",
+        "How do I return a product?",
+        "Do you accept returns?"
+      ],
+      "responses": [
+        "Yes, you can return items within 30 days of purchase",
+        "Our return policy allows returns within 30 days",
+        "You can return a product within 30 days of buying it",
+        "We accept returns within 30 days of purchase"
+      ]
+    },
+    {
+      "tag": "order_status",
+      "patterns": [
+        "Where is my order?",
+        "What is the status of my order?",
+        "Track my order",
+        "Order tracking",
+        "Can I check the status of my order?"
+      ],
+      "responses": [
+        "You can check your order status using the tracking link in your email",
+        "Track your order using the link provided in your confirmation email",
+        "Your order status can be checked with the tracking number sent to you",
+        "Use the tracking link in your email to see the status of your order"
+      ]
+    }
+  ]
+}
+
