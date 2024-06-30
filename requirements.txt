@@ -3,7 +3,7 @@ django==5.0.6
 django-modeltranslation==0.19.4
 jsonify==0.5
 dj-database-url==1.2.0
-django-environ==0.10.0
+django-environ==0.11.2
 gunicorn==20.1.0
 Pillow==9.4.0
 psycopg2-binary==2.9.5
