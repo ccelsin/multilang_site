@@ -1,52 +1,46 @@
-# Chatbot Deployment with Flask and JavaScript
+# Multilang Site with Chatbot
 
-In this tutorial we deploy the chatbot I created in [this](https://github.com/python-engineer/pytorch-chatbot) tutorial with Flask and JavaScript.
+Ce projet est une application Django multilingue intégrant un chatbot basé sur un modèle de réseau de neurones.
 
-This gives 2 deployment options:
-- Deploy within Flask app with jinja2 template
-- Serve only the Flask prediction API. The used html and javascript files can be included in any Frontend application (with only a slight modification) and can run completely separate from the Flask App then.
+## Prérequis
 
-## Initial Setup:
-This repo currently contains the starter files.
+Assurez-vous d'avoir les logiciels suivants installés sur votre machine :
 
-Clone repo and create a virtual environment
-```
-$ git clone https://github.com/python-engineer/chatbot-deployment.git
-$ cd chatbot-deployment
-$ python3 -m venv venv
-$ . venv/bin/activate
-```
-Install dependencies
-```
-$ (venv) pip install Flask torch torchvision nltk
-```
-Install nltk package
-```
-$ (venv) python
->>> import nltk
->>> nltk.download('punkt')
-```
-Modify `intents.json` with different intents and responses for your Chatbot
+- [Python 3.10+](https://www.python.org/downloads/)
+- [pip](https://pip.pypa.io/en/stable/installation/)
+- [virtualenv](https://virtualenv.pypa.io/en/latest/installation.html) (optionnel mais recommandé)
 
-Run
-```
-$ (venv) python train.py
-```
-This will dump data.pth file. And then run
-the following command to test it in the console.
-```
-$ (venv) python chat.py
-```
+## Installation
 
-Now for deployment follow my tutorial to implement `app.py` and `app.js`.
+### Cloner le dépôt
 
-## Watch the Tutorial
-[![Alt text](https://img.youtube.com/vi/a37BL0stIuM/hqdefault.jpg)](https://youtu.be/a37BL0stIuM)  
-[https://youtu.be/a37BL0stIuM](https://youtu.be/a37BL0stIuM)
+Clonez ce dépôt sur votre machine locale :
 
-## Note
-In the video we implement the first approach using jinja2 templates within our Flask app. Only slight modifications are needed to run the frontend separately. I put the final frontend code for a standalone frontend application in the [standalone-frontend](/standalone-frontend) folder.
+```bash
+git clone https://github.com/ccelsin/multilang_site.git
+cd multilang_site
 
-## Credits:
-This repo was used for the frontend code:
-https://github.com/hitchcliff/front-end-chatjs
+Créez un environnement virtuel pour isoler les dépendances du projet :
+
+python -m venv venv
+
+Activer la machine virtuelle:
+
+venv\Scripts\activate
+
+Installer les dépendances
+
+pip install -r requirements.txt
+
+Configuration de la base de données
+Appliquez les migrations pour configurer la base de données :
+python manage.py makemigrations
+python manage.py migrate
+
+
+Pour lancer le serveur de développement Django, utilisez la commande suivante :
+python manage.py runserver
+
+Internationalisation
+Ce projet supporte l'internationalisation. Pour créer des fichiers de traduction, utilisez les commandes suivantes :
+
