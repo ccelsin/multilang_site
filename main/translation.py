@@ -1,5 +1,6 @@
 # Importation du module translator et de la classe TranslationOptions depuis modeltranslation.translator
 # Ces importations sont nécessaires pour configurer les options de traduction pour un modèle Django
+"""
 from modeltranslation.translator import translator, TranslationOptions
 
 # Importation du modèle Post depuis le module models de l'application actuelle
@@ -15,3 +16,4 @@ class PostTranslationOptions(TranslationOptions):
 # Enregistrement du modèle Post avec les options de traduction spécifiées dans PostTranslationOptions
 # Cela configure les traductions pour le modèle Post en utilisant les champs spécifiés
 translator.register(Post, PostTranslationOptions)
+"""

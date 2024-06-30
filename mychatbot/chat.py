@@ -1,4 +1,4 @@
-import random
+"""import random
 import json
 
 import torch
@@ -81,3 +81,4 @@ if __name__ == "__main__":
         resp = get_response(sentence)
         # Affichage de la réponse
         print(resp)
+"""

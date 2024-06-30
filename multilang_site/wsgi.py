@@ -15,4 +15,3 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'multilang_site.settings')
 
 application = get_wsgi_application()
 
-app = application

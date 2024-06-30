@@ -7,7 +7,7 @@ def index(request):
     return render(request, 'mychatbot/base.html')
 
 # Vue pour gérer les requêtes de prédiction du chatbot
-def predict(request):
+"""def predict(request):
     # Vérification que la méthode de la requête est POST
     if request.method == "POST":
         try:
@@ -29,3 +29,4 @@ def predict(request):
             return JsonResponse({"error": "Invalid JSON"}, status=400)
     # Retourne une erreur si la méthode de la requête n'est pas POST
     return JsonResponse({"error": "Invalid request method"}, status=400)
+"""
