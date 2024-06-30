@@ -1,5 +1,5 @@
-asgiref==3.6.0
-django==4.1.7
+asgiref==3.8.1
+django==5.0.6
 django-modeltranslation==0.19.4
 jsonify==0.5
 dj-database-url==1.2.0
