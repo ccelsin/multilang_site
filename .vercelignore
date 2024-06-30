@@ -1,7 +1,9 @@
-# Ignorer les fichiers et répertoires inutiles pour le déploiement
-venv/
 __pycache__/
 *.pyc
 .DS_Store
 *.log
 *.sqlite3
+*.mp4
+*.mov
+*.zip
+*.tar.gz
