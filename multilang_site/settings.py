@@ -18,7 +18,10 @@ import dj_database_url
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-env = environ.Env()
+env = environ.Env(
+    # Définir des valeurs par défaut ici si nécessaire
+    DEBUG=(bool, False)
+)
 environ.Env.read.env()
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
@@ -102,7 +105,7 @@ DATABASES = {
     }
 }
 """
-
+DEBUG = env('DEBUG')
 DATABASES = {
     'default': dj_database_url.parse(env('DATABASE_URL'))
 }
