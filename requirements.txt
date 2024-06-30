@@ -1,3 +1,4 @@
+asgiref==3.6.0
 django==5.0.6
 django-modeltranslation==0.19.4
 jsonify==0.5
